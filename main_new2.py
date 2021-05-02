@@ -45,7 +45,7 @@ with open ('res/intro.txt') as f:
     intro_banner = f.read()
 print(intro_banner)
 
-#Fucntion to display original money of each user in a tabular format
+#Function to display original money of each user in a tabular format
 def MoneyTable():
     global all_users, money
     out = tbl(list(zip(all_users, money)), tablefmt = 'psql', headers=('Players', 'Money'))
@@ -70,7 +70,10 @@ if loaded_round_info is not None: #Found saved game data
     print()
 
     #Auto read money from last saved round
-    money = [ loaded_round_info[0][i][0] for i in loaded_round_info[0] ]
+    money = [
+	    loaded_round_info[0][i][0]
+	    for i in loaded_round_info[0]
+	    ]
 
     #Get basic info of last saved round
     no_of_players = len(money)
