@@ -3,7 +3,6 @@
 
 #Imports#
 import numpy as np
-#import matplotlib
 import os
 import json
 import secrets
