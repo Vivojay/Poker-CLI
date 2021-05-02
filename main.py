@@ -1,4 +1,4 @@
-#PC HOLDEM POKER v0.2.0
+#PC HOLDEM POKER v0.2.1 Main File
 
 
 #Imports#
@@ -101,7 +101,10 @@ if loaded_round_info is not None: #Found saved game data
 
         init_money_val = int(input('Enter initial money amount [atleast ' + str(big_blind_val*40) + ']: '))
         while init_money_val < big_blind_val*40:
-            init_money_val = input('Invalid amount, please re-enter: ').replace(',', '')
+            try:
+                init_money_val = int(input('Invalid amount, please re-enter: ').replace(',', ''))
+            except Exception:
+                init_money_val = int(input('Invalid amount, please re-enter: ').replace(',', ''))
 
         no_of_players = input('How many players? [2 - 10]: ')
         while not int(no_of_players) in list(range(2, 11)):
@@ -163,8 +166,7 @@ if loaded_round_info is not None: #Found saved game data
 else:
     while True:
         try:
-            small_blind_val = int(
-                (input('Enter the small blind value [between 1 and 10,000,000,000]: ')).replace(',', ''))
+            small_blind_val = int((input('Enter the small blind value [between 1 and 10,000,000,000]: ')).replace(',', ''))
             if small_blind_val > 0 and small_blind_val < 10 ** 10:
                 break
             else:
@@ -176,7 +178,10 @@ else:
 
     init_money_val = int(input('Enter initial money amount [atleast ' + str(big_blind_val * 40) + ']: '))
     while init_money_val < big_blind_val * 40:
-        init_money_val = input('Invalid amount, please re-enter: ')
+        try:
+            init_money_val = int(input('Invalid amount, please re-enter: ').replace(',', ''))
+        except Exception:
+            init_money_val = int(input('Invalid amount, please re-enter: ').replace(',', ''))
 
     no_of_players = input('How many players? [2 - 10]: ')
     while not int(no_of_players) in list(range(2, 11)):
