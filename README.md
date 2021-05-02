@@ -21,7 +21,7 @@ Well, to enjoy yourself and have a fun time of course, right?. Even if you don't
 
 Each player's final hands are shown in a table like this and the *winner* is also *marked* explicitly
 
-```assembly
+```markdown
 Please hit [enter] to see the final hands of each player: 
 +------------------+----------------+---------------------------------------------------------+
 | Player           | Cards          |                                                         |
