@@ -188,29 +188,6 @@ else:
 
     print()
 
-    r'''
-    small_blind_val = int(input('Enter the small blind value: '))
-    big_blind_val = 2 * small_blind_val
-
-    init_money_val = int(input('Enter initial money amount [atleast ' + str(big_blind_val * 40) + ']: '))
-    while init_money_val < big_blind_val * 40:
-        try:
-            init_money_val = input('Invalid amount, please re-enter: ')
-        except Exception:
-            pass
-
-    no_of_players = input('How many players? [2 - 10]: ')
-    while not int(no_of_players) in list(range(2, 11)):
-        try:
-            no_of_players = input('Invalid no. of players, please re enter [2 - 10]: ')
-        except Exception:
-            pass
-
-    money = [init_money_val for i in list(range(int(no_of_players)))]  # Initial money of all users
-
-    print()
-    '''
-
     # Getting usernames and registering/logging them in a list named "all_users"
     for i in range(int(no_of_players)):
         if i == 0:
@@ -291,7 +268,7 @@ input('WARNING: Press [enter] to continue only AFTER everyone receives their car
 """First Street of Poker"""
 
 #Deduct blinds from first two players and add it to the pot#
-money = [money[0]-small_blind_val]+ [(i-big_blind_val) for i in money[1:]]
+money = [money[0]-small_blind_val] + [(i-big_blind_val) for i in money[1:]]
 pot += small_blind_val + big_blind_val*(len(all_users)-1)
 
 print()
@@ -352,7 +329,6 @@ def s(i, j):
                         flag =  True
                 except Exception:
                     pass
-
 
             if raise_amt != 'x':
                 k += 1
@@ -618,9 +594,6 @@ final_hands = [i.replace('10', 'T') for i in final_hands]
 
 final_hands_original = final_hands
 
-# print(tbl(list(zip(all_users, final_hands_original)), headers=('Player', 'Cards'), tablefmt='psql'))
-# print table with all cards
-
 def narrow_winners():
     global final_hands, remaining, a
 
@@ -655,6 +628,7 @@ else:
     winner = all_users[final_hands_original.index(final_hands[0])]
 
 
+#Display a table with final hands of all players with winner marked separately
 print(tbl
         (list
             (zip
