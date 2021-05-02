@@ -15,4 +15,4 @@ Well, to enjoy yourself and have a fun time of course, right?. Even if you don't
    (After the usernames are *registered*, they are listed at once as a bulleted list).
 4. The game will then ask for the **email ids** of the users (*This is to email the private cards to each user*).
    (**Note:** It is important that the email ids be **correctly entered** the first time!)
-5. The game of [poker](https://en.wikipedia.org/wiki/Poker) proceeds like normal after this. Click [here](https://www.instructables.com/Learn-To-Play-Poker---Texas-Hold-Em-aka-Texas-Ho/#:~:text=Each%20player%20is%20dealt%20two,by%20a%20third%20betting%20round.){:target="_blank"} for rules.
+5. The game of [poker](https://en.wikipedia.org/wiki/Poker) proceeds like normal after this. Click [here](https://www.instructables.com/Learn-To-Play-Poker---Texas-Hold-Em-aka-Texas-Ho/#:~:text=Each%20player%20is%20dealt%20two,by%20a%20third%20betting%20round.) for rules.
