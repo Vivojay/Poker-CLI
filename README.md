@@ -4,7 +4,7 @@
 [Windows-Only at the time, tested on Windows 10]
 
 ## Why would I play this game?
-Well, to enjoy yourself and have a fun time of course, right?. Even if you don't have playing cards at home or just want to enjoy some poker on your laptop for a couple minutes or if you're just getting bored, you can play this game.
+Well, to enjoy yourself and have a fun time of course, right?. Even if you don't have playing cards at home or just want to enjoy some poker on your laptop for a couple minutes or even if you're just bored.
 
 **\*Note:** Before running, you must add Your **Gmail ID** and **Password** to your local machine's *environment variables* and save them as `GMAIL_ID` and `GMAIL_PASS`.
 
