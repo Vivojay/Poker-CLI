@@ -5,11 +5,12 @@
 
 ## Why would I play this game?
 Well, to enjoy yourself and have a fun time of course, right?. Even if you don't have playing cards at home or just want to enjoy some poker on your laptop for a couple minutes or if you're just getting bored, you can play this game.
+
 **\*Note:** Before running, you must add Your **Gmail ID** and **Password** to your local machine's *environment variables* and save them as `GMAIL_ID` and `GMAIL_PASS`.
 
 ## How to play
 ### How to get started
-1. Locate and **run** the file python file `main.py`.
+1. Locate and **run** the python file `main.py`.
 2. The command line game first asks for the specifics of **money distribution**, i.e. the value of the *small blind* and also the amount of *money* that each player gets at the start of the game.
 3. Next, it asks for the **number of players** who will be playing and then asks for their **usernames** one-by-one.
    (After the usernames are *registered*, they are listed at once as a bulleted list).
